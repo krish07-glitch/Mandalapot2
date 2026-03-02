@@ -1,73 +1,106 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mandala Pot | Mumbai</title>
+<title>Mandala Pot | Premium Pan Asian Veg Cafe</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-background:#111;
+font-family:Segoe UI;
+background:#0e0e0e;
 color:white;
 }
 
 header{
-background:#ff5a00;
+background:linear-gradient(90deg,#ff4d00,#ff9900);
 padding:20px;
 text-align:center;
-font-size:30px;
+font-size:32px;
+font-weight:bold;
 }
 
 nav{
-background:#000;
+background:black;
 padding:15px;
 text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
-color:#ff5a00;
-margin:15px;
+color:#ff9900;
+margin:20px;
 text-decoration:none;
+font-size:18px;
 }
 
 .hero{
-padding:100px;
-text-align:center;
+height:500px;
 background:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd');
 background-size:cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-shadow:0 0 10px black;
+}
+
+.hero h1{
+font-size:50px;
 }
 
 .section{
-padding:40px;
+padding:50px;
 text-align:center;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .card{
-background:#1f1f1f;
-margin:20px;
+background:#1c1c1c;
+margin:15px;
 padding:20px;
+width:250px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(255,153,0,0.4);
+}
+
+.gallery img{
+width:300px;
+margin:10px;
 border-radius:10px;
 }
 
-footer{
-background:black;
-padding:20px;
-text-align:center;
+.map{
+width:100%;
+height:300px;
+border:0;
 }
 
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-background:green;
-color:white;
+background:#25D366;
 padding:15px;
 border-radius:50%;
+font-size:22px;
 text-decoration:none;
+color:white;
+}
+
+footer{
+background:black;
+padding:20px;
 }
 
 </style>
@@ -84,57 +117,93 @@ Mandala Pot 🍜
 
 <nav>
 
-<a href="#">Home</a> <a href="#">Menu</a> <a href="#">Contact</a>
+<a href="#">Home</a> <a href="#">Menu</a> <a href="#">Gallery</a> <a href="#">Contact</a>
 
 </nav>
 
 <div class="hero">
 
-<h1>Pure Veg Pan Asian Cafe</h1>
+<h1>Pure Veg Pan-Asian Magic</h1>
 
-<p>Mumbai</p>
-
-</div>
-
-<div class="section">
-
-<h2>Menu</h2>
-
-<div class="card">
-
-Veg Sushi ₹350
-
-</div>
-
-<div class="card">
-
-Ramen ₹420
-
-</div>
-
-<div class="card">
-
-Dim Sum ₹300
-
-</div>
+<p>Mumbai's Premium Vegetarian Cafe</p>
 
 </div>
 
 <div class="section">
 
-<h2>Contact</h2>
+<h2>Our Menu</h2>
 
-<p>Mumbai, India</p>
+<div class="menu">
 
-<p>Open 11AM - 11PM</p>
+<div class="card">
+
+<h3>Veg Sushi</h3>
+
+₹350
 
 </div>
 
-<a href="#" class="whatsapp">W</a>
+<div class="card">
+
+<h3>Ramen Bowl</h3>
+
+₹420
+
+</div>
+
+<div class="card">
+
+<h3>Dim Sum</h3>
+
+₹300
+
+</div>
+
+<div class="card">
+
+<h3>Thai Curry</h3>
+
+₹380
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section gallery">
+
+<h2>Gallery</h2>
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+<img src="https://images.unsplash.com/photo-1553621042-f6e147245754">
+
+<img src="https://images.unsplash.com/photo-1514516870926-2059897a7f06">
+
+</div>
+
+<div class="section">
+
+<h2>Visit Us</h2>
+
+<iframe class="map"
+
+src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed">
+
+</iframe>
+
+</div>
+
+<a href="https://wa.me/919999999999" class="whatsapp">
+
+💬
+
+</a>
 
 <footer>
 
-Mandala Pot © 2026
+Mandala Pot © 2026 | Mumbai
 
 </footer>
 
