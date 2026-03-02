@@ -7,28 +7,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{margin:0;font-family:Arial;background:#0e0e0e;color:white;scroll-behavior:smooth}
-header{background:#d40000;padding:20px;text-align:center;font-size:28px;font-weight:bold}
+body{margin:0;font-family:Arial;background:#0b0b0b;color:white}
+header{background:#d10000;padding:20px;text-align:center;font-size:28px;font-weight:bold}
 nav{background:black;padding:15px;text-align:center;position:sticky;top:0}
-nav a{color:#ff4d00;margin:15px;text-decoration:none;font-size:16px}
-.section{padding:50px;text-align:center}
-.hero{background:#111;padding:100px 20px}
-.hero h1{font-size:40px}
+nav a{color:#ff6a00;margin:15px;text-decoration:none}
+.section{padding:40px;text-align:center}
 .menu-grid{display:flex;flex-wrap:wrap;justify-content:center}
-.card{background:#1c1c1c;margin:15px;padding:20px;width:260px;border-radius:12px;box-shadow:0 0 15px rgba(255,0,0,0.4)}
-.card button{background:#ff4d00;border:none;color:white;padding:10px;margin-top:10px;border-radius:5px;cursor:pointer}
-.gallery img{width:280px;margin:10px;border-radius:10px}
-input,select{padding:10px;margin:10px;width:250px}
-button.submit{background:#ff4d00;color:white;border:none;padding:10px 20px}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;padding:15px;border-radius:50%;color:white;text-decoration:none;font-size:20px}
-footer{background:black;padding:20px;text-align:center;margin-top:40px}
+.card{
+background:#1a1a1a;
+margin:12px;
+padding:18px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(255,106,0,0.5)
+}
+.card button{
+background:#ff6a00;
+border:none;
+color:white;
+padding:8px 15px;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer
+}
+.category{
+font-size:26px;
+margin-top:40px;
+color:#ff6a00
+}
+.hero{
+padding:100px 20px;
+background:url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd');
+background-size:cover
+}
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+color:white;
+text-decoration:none
+}
 </style>
 
 <script>
-function orderItem(item){
+function orderItem(name){
 let number="919999999999";
-let message="Hello Mandala Pot, I want to order "+item;
-window.open("https://wa.me/"+number+"?text="+encodeURIComponent(message));
+let msg="Hello Mandala Pot, I want to order "+name;
+window.open("https://wa.me/"+number+"?text="+encodeURIComponent(msg));
 }
 </script>
 
@@ -41,97 +69,124 @@ Mandala Pot – By Take & Treat 🍜
 </header>
 
 <nav>
-<a href="#home">Home</a>
 <a href="#menu">Menu</a>
-<a href="#gallery">Gallery</a>
-<a href="#booking">Book Table</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero" id="home">
+<div class="hero">
 <h1>Pure Veg Pan-Asian Experience</h1>
-<p>Mumbai’s Premium Vegetarian Cafe</p>
 </div>
 
 <div class="section" id="menu">
-<h2>Featured Menu</h2>
+
+<div class="category">Soup</div>
 <div class="menu-grid">
 
 <div class="card">
-<h3>Veg Sushi</h3>
-₹350
-<br>
-<button onclick="orderItem('Veg Sushi')">Order</button>
+Hot & Sour Soup – ₹180
+<button onclick="orderItem('Hot & Sour Soup')">Order</button>
 </div>
 
 <div class="card">
-<h3>Ramen – Mandala Pot Special</h3>
-₹440
-<br>
-<button onclick="orderItem('Mandala Pot Ramen')">Order</button>
+Manchow Soup – ₹180
+<button onclick="orderItem('Manchow Soup')">Order</button>
 </div>
 
 <div class="card">
-<h3>Chilli Basil Bao</h3>
-₹350
-<br>
+Sweet Corn Soup – ₹190
+<button onclick="orderItem('Sweet Corn Soup')">Order</button>
+</div>
+
+</div>
+
+<div class="category">Bao</div>
+<div class="menu-grid">
+
+<div class="card">
+Chilli Basil Bao – ₹350
 <button onclick="orderItem('Chilli Basil Bao')">Order</button>
 </div>
 
 <div class="card">
-<h3>Black Pepper Sizzler</h3>
-₹550
-<br>
+Kung Pao Bao – ₹360
+<button onclick="orderItem('Kung Pao Bao')">Order</button>
+</div>
+
+</div>
+
+<div class="category">Sushi</div>
+<div class="menu-grid">
+
+<div class="card">
+Avocado Sushi – ₹380
+<button onclick="orderItem('Avocado Sushi')">Order</button>
+</div>
+
+<div class="card">
+Tempura Sushi – ₹400
+<button onclick="orderItem('Tempura Sushi')">Order</button>
+</div>
+
+</div>
+
+<div class="category">Ramen</div>
+<div class="menu-grid">
+
+<div class="card">
+Mandala Pot Special Ramen – ₹440
+<button onclick="orderItem('Mandala Pot Ramen')">Order</button>
+</div>
+
+<div class="card">
+Spicy Korean Ramen – ₹420
+<button onclick="orderItem('Spicy Korean Ramen')">Order</button>
+</div>
+
+</div>
+
+<div class="category">Sizzlers</div>
+<div class="menu-grid">
+
+<div class="card">
+Black Pepper Sizzler – ₹550
 <button onclick="orderItem('Black Pepper Sizzler')">Order</button>
 </div>
 
 <div class="card">
-<h3>Sizzling Brownie</h3>
-₹199
-<br>
+Schezwan Sizzler – ₹520
+<button onclick="orderItem('Schezwan Sizzler')">Order</button>
+</div>
+
+</div>
+
+<div class="category">Dessert</div>
+<div class="menu-grid">
+
+<div class="card">
+Sizzling Brownie – ₹199
 <button onclick="orderItem('Sizzling Brownie')">Order</button>
 </div>
 
 <div class="card">
-<h3>Hot & Sour Soup</h3>
-₹180
-<br>
-<button onclick="orderItem('Hot & Sour Soup')">Order</button>
+Chocolate Spring Roll – ₹220
+<button onclick="orderItem('Chocolate Spring Roll')">Order</button>
 </div>
 
 </div>
-</div>
 
-<div class="section gallery" id="gallery">
-<h2>Gallery</h2>
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
-<img src="https://images.unsplash.com/photo-1553621042-f6e147245754">
-<img src="https://images.unsplash.com/photo-1514516870926-2059897a7f06">
-</div>
-
-<div class="section" id="booking">
-<h2>Book a Table</h2>
-<form onsubmit="alert('Booking request sent! We will contact you.');return false;">
-<input type="text" placeholder="Your Name" required><br>
-<input type="tel" placeholder="Phone Number" required><br>
-<input type="date" required><br>
-<input type="time" required><br>
-<button class="submit">Book Now</button>
-</form>
 </div>
 
 <div class="section" id="contact">
+
 <h2>Visit Us</h2>
-<p>Mumbai, India</p>
-<iframe width="100%" height="300" src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+Mumbai, India
+
 </div>
 
-<a href="https://wa.me/919999999999" class="whatsapp">💬</a>
-
-<footer>
-Mandala Pot © 2026 | Mumbai
-</footer>
+<a href="https://wa.me/919999999999" class="whatsapp">
+💬
+</a>
 
 </body>
 </html>
-
