@@ -1,154 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandala Pot | Pan-Asian & Hot Pot Culture</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f1115; color: #ffffff; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
-        .accent-gradient { background: linear-gradient(135deg, #e2b86b 0%, #c59d5f 100%); }
-        .text-accent { color: #e2b86b; }
-        .nav-link:hover { color: #e2b86b; transition: 0.3s; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mandala Pot | Pan-Asian Veg Cafe</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Plus Jakarta Sans',sans-serif;
+background:#0f1115;
+color:white;
+}
+
+.glass{
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.accent-gradient{
+background:linear-gradient(135deg,#ff7a18,#ff3d00);
+}
+
+.text-accent{
+color:#ff7a18;
+}
+
+.nav-link:hover{
+color:#ff7a18;
+transition:0.3s;
+}
+
+</style>
+
 </head>
+
 <body class="antialiased">
 
-    <nav class="fixed w-full z-50 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-2xl px-8 py-3">
-            <div class="text-2xl font-bold tracking-tighter">MANDALA<span class="text-accent">POT</span></div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#menu" class="nav-link">Menu</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link text-accent border border-[#e2b86b] px-4 py-1 rounded-full">Book Table</a>
-            </div>
-        </div>
-    </nav>
+<!-- NAVBAR -->
 
-    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-40" alt="Cafe Interior">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0f1115]"></div>
-        </div>
-        <div class="relative z-10 text-center px-4 max-w-4xl">
-            <span class="text-accent uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Crafting Asian Traditions</span>
-            <h1 class="text-5xl md:text-8xl font-bold mb-6 tracking-tight leading-tight">Artistic Soul.<br>Authentic <span class="text-accent italic text-4xl md:text-7xl">Flavors.</span></h1>
-            <p class="text-gray-400 text-lg mb-10 max-w-xl mx-auto">Experience the intersection of meditative Mandala art and the vibrant heat of Pan-Asian Hot Pot culture.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#menu" class="accent-gradient text-black px-10 py-4 rounded-full font-bold hover:scale-105 transition">View Menu</a>
-                <a href="#experience" class="glass px-10 py-4 rounded-full font-bold hover:bg-white/10 transition">The Story</a>
-            </div>
-        </div>
-    </section>
+<nav class="fixed w-full z-50 px-6 py-4">
 
-    <section id="menu" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="flex justify-between items-end mb-12">
-            <div>
-                <h2 class="text-3xl font-bold">Signature Series</h2>
-                <p class="text-gray-500">Hand-picked selections from our Pan-Asian kitchen.</p>
-            </div>
-            <a href="#" class="text-accent text-sm font-semibold underline underline-offset-8">Explore Full Menu</a>
-        </div>
+<div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-2xl px-8 py-3">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="group relative overflow-hidden rounded-3xl h-[500px] glass">
-                <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-60">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
-                <div class="absolute bottom-0 p-8">
-                    <h3 class="text-2xl font-bold mb-2">Signature Hot Pot</h3>
-                    <p class="text-sm text-gray-400 mb-4">A meditative blend of Thai Basil gravy and herbed stock broth.</p>
-                    <span class="text-accent font-bold">₹ 850 for two</span>
-                </div>
-            </div>
-            <div class="group relative overflow-hidden rounded-3xl h-[500px] glass">
-                <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-60">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
-                <div class="absolute bottom-0 p-8">
-                    <h3 class="text-2xl font-bold mb-2">Vietnamese Latte</h3>
-                    <p class="text-sm text-gray-400 mb-4">Brewed with sweet coconut milk for a tropical soul-soothing finish.</p>
-                    <span class="text-accent font-bold">₹ 220</span>
-                </div>
-            </div>
-            <div class="group relative overflow-hidden rounded-3xl h-[500px] glass">
-                <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-60">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
-                <div class="absolute bottom-0 p-8">
-                    <h3 class="text-2xl font-bold mb-2">Japanese Sando</h3>
-                    <p class="text-sm text-gray-400 mb-4">Chicken Katsu served on airy Hokkaido milk bread with Asian slaw.</p>
-                    <span class="text-accent font-bold">₹ 349</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="text-2xl font-bold">
+MANDALA<span class="text-accent">POT</span>
+</div>
 
-    <section id="experience" class="py-24 bg-[#161920]">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div class="relative">
-                <div class="aspect-square rounded-3xl overflow-hidden border-8 border-white/5">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover" alt="Mandala Decor">
-                </div>
-                <div class="absolute -bottom-6 -right-6 glass p-8 rounded-2xl hidden md:block">
-                    <p class="text-3xl font-bold text-accent">4.8/5</p>
-                    <p class="text-xs text-gray-400 uppercase tracking-widest">Customer Rating</p>
-                </div>
-            </div>
-            <div>
-                <h2 class="text-4xl font-bold mb-6">More than a meal.<br>It's a <span class="text-accent">Mandala.</span></h2>
-                <p class="text-gray-400 leading-relaxed mb-8">
-                    At Mandala Pot, we believe dining should be an act of mindfulness. Our interiors are inspired by the geometric harmony of Mandala art, creating a sanctuary where you can slow down and savor complex Pan-Asian flavors. 
-                </p>
-                <ul class="space-y-4 mb-10">
-                    <li class="flex items-center space-x-3">
-                        <span class="w-6 h-6 rounded-full accent-gradient flex items-center justify-center text-black text-[10px] font-bold">✓</span>
-                        <span class="text-sm text-gray-300">Live Asian Hot Pot Cooking Style</span>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <span class="w-6 h-6 rounded-full accent-gradient flex items-center justify-center text-black text-[10px] font-bold">✓</span>
-                        <span class="text-sm text-gray-300">Freshly Hand-rolled Dim Sums</span>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <span class="w-6 h-6 rounded-full accent-gradient flex items-center justify-center text-black text-[10px] font-bold">✓</span>
-                        <span class="text-sm text-gray-300">Artisan Coffee & Specialty Teas</span>
-                    </li>
-                </ul>
-                <button class="border-b-2 border-accent pb-1 text-accent font-bold hover:text-white transition">Reserve Your Experience</button>
-            </div>
-        </div>
-    </section>
+<div class="hidden md:flex space-x-8 text-sm font-medium">
 
-    <section id="contact" class="py-24 px-6">
-        <div class="max-w-5xl mx-auto glass rounded-[40px] p-12 md:p-20 text-center">
-            <h2 class="text-4xl font-bold mb-4">Visit Us Today</h2>
-            <p class="text-gray-400 mb-12">Join us for lunch, brunch, or dinner in the heart of Pune.</p>
-            
-            <div class="grid md:grid-cols-3 gap-12 text-sm">
-                <div>
-                    <h4 class="text-accent font-bold mb-2 uppercase tracking-widest">Location</h4>
-                    <p class="text-gray-300 italic">Next to ICICI Bank,<br>North Avenue, Kalyani Nagar,<br>Pune, Maharashtra</p>
-                </div>
-                <div>
-                    <h4 class="text-accent font-bold mb-2 uppercase tracking-widest">Hours</h4>
-                    <p class="text-gray-300 italic">Mon — Sun<br>11:00 AM — 11:00 PM</p>
-                </div>
-                <div>
-                    <h4 class="text-accent font-bold mb-2 uppercase tracking-widest">Contact</h4>
-                    <p class="text-gray-300 italic">+91 20 123 4567<br>hello@mandalapot.com</p>
-                </div>
-            </div>
-            
-            <div class="mt-16 pt-12 border-t border-white/5 flex flex-col items-center">
-                <div class="flex space-x-6 mb-8">
-                    <a href="#" class="text-gray-500 hover:text-white">Instagram</a>
-                    <a href="#" class="text-gray-500 hover:text-white">Facebook</a>
-                    <a href="#" class="text-gray-500 hover:text-white">Zomato</a>
-                </div>
-                <p class="text-[10px] text-gray-600 uppercase tracking-widest">© 2024 Mandala Pot Culture. All Rights Reserved.</p>
-            </div>
-        </div>
-    </section>
+<a href="#home" class="nav-link">Home</a>
+<a href="#menu" class="nav-link">Menu</a>
+<a href="#experience" class="nav-link">Experience</a>
+<a href="#contact" class="nav-link text-accent border border-[#ff7a18] px-4 py-1 rounded-full">Book Table</a>
+
+</div>
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+
+<div class="absolute inset-0">
+
+<img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=2000&q=80"
+class="w-full h-full object-cover opacity-40">
+
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0f1115]"></div>
+
+</div>
+
+<div class="relative text-center max-w-4xl px-4">
+
+<span class="text-accent uppercase tracking-[0.3em] text-xs font-bold block mb-4">
+Pure Veg Pan Asian Cuisine
+</span>
+
+<h1 class="text-5xl md:text-7xl font-bold mb-6">
+Mandala Pot
+</h1>
+
+<p class="text-gray-400 mb-10">
+A soulful vegetarian Pan-Asian dining experience inspired by Mandala harmony.
+</p>
+
+<a href="#menu" class="accent-gradient text-black px-10 py-4 rounded-full font-bold hover:scale-105 transition">
+View Menu
+</a>
+
+</div>
+</section>
+
+
+<!-- MENU -->
+
+<section id="menu" class="py-24 px-6 max-w-7xl mx-auto">
+
+<div class="mb-12">
+
+<h2 class="text-3xl font-bold">Pan-Asian Menu</h2>
+<p class="text-gray-500">Pure Vegetarian Asian Specialties</p>
+
+</div>
+
+
+<div class="grid md:grid-cols-3 gap-6">
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Veg Sushi Roll</h3>
+<p class="text-gray-400 mb-3">Avocado cucumber sushi roll with soy dip</p>
+<span class="font-bold">₹350</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Veg Ramen Bowl</h3>
+<p class="text-gray-400 mb-3">Miso ramen broth with tofu and mushrooms</p>
+<span class="font-bold">₹420</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Steamed Veg Dim Sum</h3>
+<p class="text-gray-400 mb-3">Handmade dumplings with Asian vegetables</p>
+<span class="font-bold">₹300</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Thai Red Curry</h3>
+<p class="text-gray-400 mb-3">Creamy coconut curry served with jasmine rice</p>
+<span class="font-bold">₹380</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Korean Glass Noodles</h3>
+<p class="text-gray-400 mb-3">Sweet soy stir fried noodles with vegetables</p>
+<span class="font-bold">₹360</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Veg Bao Buns</h3>
+<p class="text-gray-400 mb-3">Soft steamed buns filled with crispy tofu</p>
+<span class="font-bold">₹320</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Asian Stir Fry Rice</h3>
+<p class="text-gray-400 mb-3">Wok tossed rice with vegetables and soy</p>
+<span class="font-bold">₹280</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Teriyaki Tofu Bowl</h3>
+<p class="text-gray-400 mb-3">Grilled tofu glazed with teriyaki sauce</p>
+<span class="font-bold">₹340</span>
+</div>
+
+
+<div class="glass p-8 rounded-3xl">
+<h3 class="text-xl font-bold mb-3 text-accent">Veg Pad Thai</h3>
+<p class="text-gray-400 mb-3">Classic Thai noodles with peanuts and lime</p>
+<span class="font-bold">₹390</span>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="py-24 bg-[#161920]">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80"
+class="rounded-3xl">
+
+<div>
+
+<h2 class="text-4xl font-bold mb-6">
+More Than Food. It's a <span class="text-accent">Mandala</span>
+</h2>
+
+<p class="text-gray-400 mb-6">
+Mandala Pot blends mindful dining with vibrant Pan-Asian vegetarian flavors.
+Our interior and food philosophy reflects harmony, balance and creativity.
+</p>
+
+<ul class="space-y-3 text-gray-300">
+
+<li>✓ Live Asian cooking</li>
+<li>✓ Handmade dim sums</li>
+<li>✓ Artisan teas and coffees</li>
+
+</ul>
+
+</div>
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-24 px-6">
+
+<div class="max-w-5xl mx-auto glass rounded-[40px] p-16 text-center">
+
+<h2 class="text-4xl font-bold mb-6">Visit Mandala Pot</h2>
+
+<div class="grid md:grid-cols-3 gap-12 text-sm">
+
+<div>
+<h4 class="text-accent font-bold mb-2">Location</h4>
+<p class="text-gray-300">
+Mumbai, Maharashtra
+</p>
+</div>
+
+<div>
+<h4 class="text-accent font-bold mb-2">Hours</h4>
+<p class="text-gray-300">
+11:00 AM – 11:00 PM
+</p>
+</div>
+
+<div>
+<h4 class="text-accent font-bold mb-2">Contact</h4>
+<p class="text-gray-300">
++91 98765 43210
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 
 </body>
 </html>
